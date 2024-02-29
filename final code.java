@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 public class Main {
-    public long fac(int n) {
+    public long factorial(int n) {
         if (n == 1)
             return 1;
         else
             return n * fac(n - 1);
     }
 
-    public long fib(int n) {
+    public long fibonacciSample(int n) {
         if (n == 1 || n == 0)
             return 1;
         else
