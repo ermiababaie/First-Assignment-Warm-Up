@@ -1,14 +1,14 @@
 public class Exercises1 {
     public long factorial(int n) {
-        if (n == 1)
+        if (n == 0)
             return 1;
         else
             return n * factorial(n - 1);
     }
 
     public long fibonacci(int n) {
-        if (n == 1 || n == 0)
-            return 1;
+        if (n == 0 || n == 1)
+            return n;
         else
             return (fibonacci(n - 1) + fibonacci(n - 2));
     }
@@ -18,7 +18,7 @@ public class Exercises1 {
         for (int i = 0; i < row; i++)
             c[i] = new char[i + 1];
         for (int i = 0; i < row; i++) {
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j <= i; j++) {
                 c[i][j] = '*';
             }
         }
