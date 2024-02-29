@@ -6,11 +6,11 @@ public class Exercises1 {
             return n * factorial(n - 1);
     }
 
-    public long fibonacciSample(int n) {
+    public long fibonacci(int n) {
         if (n == 1 || n == 0)
             return 1;
         else
-            return (fibonacciSample(n - 1) + fibonacciSample (n - 2));
+            return (fibonacci(n - 1) + fibonacci(n - 2));
     }
 
     public char[][] generateTriangle(int row) {
