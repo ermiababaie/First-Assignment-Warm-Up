@@ -5,14 +5,14 @@ public class Main {
         if (n == 1)
             return 1;
         else
-            return n * fac(n - 1);
+            return n * factorial(n - 1);
     }
 
     public long fibonacciSample(int n) {
         if (n == 1 || n == 0)
             return 1;
         else
-            return (fib(n - 1) + fib (n - 2));
+            return (fibonacciSample(n - 1) + fibonacciSample (n - 2));
     }
 
     public char[][] generateTriangle(int row) {
@@ -28,6 +28,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        
+
     }
 }
