@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Mai {
+public class Exercises1 {
     public long factorial(int n) {
         if (n == 1)
             return 1;
